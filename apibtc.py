@@ -50,6 +50,8 @@ def lcd_message(message, line, backlight=LCD_BACKLIGHT):
         lcd_byte(ord(char), LCD_CHR, backlight)
 
 # Function to fetch data from the API
+# API public-pool.io
+# https://public-pool.io:40557/api/client/btcString
 def fetch_api_data():
     try:
         response = requests.get("https://public-pool.io:40557/api/client/1EcbTSpsvBuosnJ4WfsonTuJrJGT3QFz5C")
